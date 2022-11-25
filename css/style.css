@@ -102,6 +102,7 @@ aside {
     top: 0;
     left: -100%;
     transition: all .6s ease;
+    z-index: 99;
 
 }
 
@@ -201,12 +202,13 @@ article {
     object-fit: contain;
     height: 1rem;
     cursor: pointer;
-    opacity: 0;
+    opacity: 0.5;
+    visibility: hidden;
     transition: all .2s;
 }
 
 article:hover .tools img {
-    opacity: 0.5;
+    visibility: visible;
 }
 
 .tools img:hover{
@@ -277,6 +279,11 @@ footer a img {
         width: 6rem;
     }
 
+    .tools img{
+        opacity: 0.5;
+        visibility: visible;
+    }
+
     aside {
         width: 100%;
     }
@@ -300,6 +307,11 @@ footer a img {
 
     section{
         padding: 2.5rem 0.5rem;
+    }
+
+    .tools img{
+        opacity: 0.5;
+        visibility: visible;
     }
 
     article{
