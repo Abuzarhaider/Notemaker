@@ -105,7 +105,8 @@ textarea {
     padding: 5px;
 }
 
-aside input::placeholder, textarea::placeholder{
+aside input::placeholder,
+textarea::placeholder {
     color: rgb(199, 199, 199);
 }
 
@@ -129,21 +130,21 @@ aside button {
     transition: all .3s;
 }
 
-aside button[type="submit"]{
+aside button[type="submit"] {
     background-color: rgba(255, 255, 255, 0.801);
     color: black;
 }
 
-aside button[type="submit"]:hover{
+aside button[type="submit"]:hover {
     background-color: white;
 }
 
-aside button[type="reset"]{
+aside button[type="reset"] {
     background: #323232;
     color: white;
 }
 
-aside button[type="reset"]:hover{
+aside button[type="reset"]:hover {
     background-color: #404040;
 }
 
@@ -200,7 +201,7 @@ article:hover .tools img {
     visibility: visible;
 }
 
-.tools img:hover{
+.tools img:hover {
     opacity: 1 !important;
 }
 
@@ -231,16 +232,9 @@ article p {
 
 /* Mobile */
 
-@media (320px <= width <= 425px) {
-    nav {
-        width: 18rem;
-    }
+@media (320px <=width <=425px) {
 
-    .search input {
-        width: 6rem;
-    }
-
-    .tools img{
+    .tools img {
         opacity: 0.5;
         visibility: visible;
     }
@@ -254,36 +248,36 @@ article p {
         width: 17rem;
     }
 
-    aside textarea{
+    aside textarea {
         height: 12rem;
     }
 }
 
 
 /* Tablet */
-@media (426px < width <= 768px){
+@media (426px < width <=768px) {
     aside {
         width: 100%;
     }
 
-    section{
+    section {
         padding: 2.5rem 0.5rem;
     }
 
-    .tools img{
+    .tools img {
         opacity: 0.5;
         visibility: visible;
     }
 
-    article{
+    article {
         max-width: 13rem;
     }
 }
 
 
 /* Laptop */
-@media (768px < width <= 1024px){
-    aside{
+@media (768px < width <=1024px) {
+    aside {
         width: 40%;
     }
 }
