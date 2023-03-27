@@ -230,9 +230,40 @@ article p {
     Responsiveness
  ------------------*/
 
+
+
+/* Tablet */
+@media (width <=768px) {
+    aside {
+        width: 100%;
+    }
+
+    .asideHead img {
+        margin: 5px 3rem;
+    }
+
+    section {
+        padding: 2.5rem 0.5rem;
+    }
+
+    .tools img {
+        opacity: 0.5;
+        visibility: visible;
+    }
+
+    article {
+        max-width: 13rem;
+    }
+}
+
 /* Mobile */
 
-@media (320px <=width <=425px) {
+
+@media (width <=425px) {
+
+    .asideHead img {
+        margin: 5px 1.5rem;
+    }
 
     .tools img {
         opacity: 0.5;
@@ -253,31 +284,27 @@ article p {
     }
 }
 
-
-/* Tablet */
-@media (426px < width <=768px) {
-    aside {
-        width: 100%;
-    }
-
-    section {
-        padding: 2.5rem 0.5rem;
-    }
-
-    .tools img {
-        opacity: 0.5;
-        visibility: visible;
-    }
+@media (width <=320px) {
 
     article {
-        max-width: 13rem;
+        min-width: 10rem;
+        min-height: 11rem;
+    }
+
+    aside input,
+    textarea {
+        width: 12rem;
     }
 }
 
-
 /* Laptop */
-@media (768px < width <=1024px) {
+@media (width > 768px) {
     aside {
         width: 40%;
+    }
+
+    aside input,
+    textarea {
+        width: 17rem;
     }
 }
