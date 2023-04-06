@@ -113,19 +113,33 @@ let deleteNote = (titleEdit) => {
     Aside
 **********/
 let asideNoteDiv = document.querySelector(".asideNoteDiv");
+
+// show sideBar onclick plusSign(+)
 let newNote = () => {
-    asideNoteDiv.style.left = "0";
+    asideNoteDiv.classList.toggle("active");
 }
 
+// close sideBar onclick cross(x)
 let closeNewNote = () => {
-    asideNoteDiv.style.left = "-100%";
-
+    asideNoteDiv.classList.remove("active");
 }
 
+// hide sideBar onclick body
+document.onclick = (e) => {
+    let unique = e.target.getAttribute('name');
+    console.log(unique);
+    console.log(typeof unique)
+
+    if (unique !== "unique") {
+        asideNoteDiv.classList.remove("active");
+    }
+}
+
+// hide sideBar when form filled
 let asideIn = () => {
     let titleInput = document.querySelector("#title");
     let descriptionInput = document.querySelector("#description")
 
     if (titleInput.value != "" && descriptionInput.value != "")
-        asideNoteDiv.style.left = "-100%";
+        asideNoteDiv.classList.remove("active");
 }
